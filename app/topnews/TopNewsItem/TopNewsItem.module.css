@@ -1,0 +1,46 @@
+.block {
+	padding: 7px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	max-width: 300px;
+	border-radius: 14px;
+	background: #f4f4f4;
+	margin: 0 0 10px 0;
+}
+.block img {
+	border-radius: 7px;
+	width: 73px;
+	height: 73px;
+}
+.block h3 {
+	color: #181818;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 10px 0;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.block span {
+	color: #777;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (max-width: 768px) {
+	.block {
+		min-width: 300px;
+	}
+	.block span {
+		font-size: 12px;
+	}
+	.block h3 {
+		font-size: 12px;
+	}
+}

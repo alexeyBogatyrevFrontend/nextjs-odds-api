@@ -1,0 +1,38 @@
+.block {
+	max-width: 300px;
+	border-radius: 14px;
+	background: #f4f4f4;
+}
+.block__bottom {
+	padding: 20px 15px;
+}
+.block h3 {
+	color: #181818;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 10px 0;
+}
+.block span {
+	color: #777;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.block img {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.block {
+		min-width: 300px;
+	}
+	.block h3 {
+		font-size: 12px;
+	}
+	.block span {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,345 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/Menu/Menu.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Menu_nav__6u023 li {
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (max-width: 768px) {
+	.Menu_nav__6u023 li {
+		color: #777;
+		font-size: 12px;
+	}
+	.Menu_nav__6u023 ul {
+		padding: 0;
+		flex-direction: column;
+		align-items: start;
+	}
+	.Menu_headerNav__szyRI {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: white;
+		z-index: 2;
+		transition: all 0.3s ease;
+	}
+	.Menu_active__GwwwA {
+		top: 45px;
+	}
+	.Menu_headerNav__szyRI ul {
+		flex-direction: column;
+		align-items: start;
+		padding: 26px 15px;
+	}
+	.Menu_headerNav__szyRI li {
+		color: #181818;
+		font-size: 12px;
+	}
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/UI/Burger/Burger.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+@media (max-width: 768px) {
+	.Burger_burgerMenu__aYUfn {
+		width: 36px;
+		height: 12px;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+	}
+
+	.Burger_line__eWD4r {
+		width: 36px;
+		height: 2px;
+		background-color: #18c653;
+		transition: 0.3s;
+	}
+
+	.Burger_open__OvWL4 .Burger_line__eWD4r:nth-child(1) {
+		transform: rotate(45deg) translate(5px, 10px);
+	}
+
+	.Burger_open__OvWL4 .Burger_line__eWD4r:nth-child(2) {
+		transform: rotate(-45deg) translate(-4px, -5px);
+	}
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/Footer/Footer.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+@media (max-width: 768px) {
+	.Footer_footer__container__o_QP1 {
+		flex-direction: column;
+		align-items: start;
+		gap: 25px;
+	}
+	.Footer_footer__bottom__z61iO {
+		width: 100%;
+		align-items: initial;
+	}
+	.Footer_copy__tvWA4 {
+		text-align: center;
+		font-size: 10px;
+	}
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/sportsCategory/SportsCategoryItem/SportsCategoryItem.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SportsCategoryItem_block__2Sz6T {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 15px 17px;
+	border-radius: 7px;
+	background: #f4f4f4;
+	cursor: pointer;
+}
+.SportsCategoryItem_block__2Sz6T img {
+	width: 24px;
+}
+.SportsCategoryItem_block__2Sz6T span {
+	color: #181818;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.SportsCategoryItem_active__HbLa9 {
+	background: #18c653;
+}
+.SportsCategoryItem_active__HbLa9 span {
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.SportsCategoryItem_block__2Sz6T {
+		min-width: -moz-fit-content;
+		min-width: fit-content;
+		justify-content: center;
+	}
+	.SportsCategoryItem_block__2Sz6T span {
+		font-size: 14px;
+	}
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/sportsCategory/SportsCategoryList/SportsCategoryList.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SportsCategoryList_wrapper__0uVPx {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+@media (max-width: 768px) {
+	.SportsCategoryList_wrapper__0uVPx {
+		flex-direction: row;
+		overflow-x: auto;
+		padding: 0 0 12px 0;
+	}
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/components/SportItem/SportItem.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.SportItem_sportCategory__6afda {
+	overflow-y: auto;
+	max-height: 70vh;
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent;
+}
+.SportItem_sportCategory__6afda::-webkit-scrollbar {
+	width: 6px;
+}
+.SportItem_sportCategory__6afda::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+.SportItem_sportCategory__wrapper__82tzJ {
+	border-radius: 14px;
+	background-color: #f4f4f4;
+	padding: 15px;
+}
+.SportItem_sportCategory__item__m9hzV {
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 7px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 10px 0;
+}
+.SportItem_sportCategory__item__m9hzV span {
+	color: #181818;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.SportItem_sportCategory__item__m9hzV span:nth-child(2) {
+	color: #777;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/topnews/TopNewsItem/TopNewsItem.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.TopNewsItem_block__y8NRF {
+	padding: 7px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	max-width: 300px;
+	border-radius: 14px;
+	background: #f4f4f4;
+	margin: 0 0 10px 0;
+}
+.TopNewsItem_block__y8NRF img {
+	border-radius: 7px;
+	width: 73px;
+	height: 73px;
+}
+.TopNewsItem_block__y8NRF h3 {
+	color: #181818;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 10px 0;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.TopNewsItem_block__y8NRF span {
+	color: #777;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+@media (max-width: 768px) {
+	.TopNewsItem_block__y8NRF {
+		min-width: 300px;
+	}
+	.TopNewsItem_block__y8NRF span {
+		font-size: 12px;
+	}
+	.TopNewsItem_block__y8NRF h3 {
+		font-size: 12px;
+	}
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/topnews/TopNewsList/TopNewsList.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.TopNewsList_title__JveXf {
+	color: #181818;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 20px 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+@media (max-width: 768px) {
+	.TopNewsList_wrapper__MvaHH {
+		display: flex;
+		gap: 20px;
+		overflow-x: auto;
+		padding: 0 0 2px 0;
+	}
+	.TopNewsList_title__JveXf {
+		font-size: 16px;
+	}
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/news/NewsItem/NewsItem.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.NewsItem_block__V2a0z {
+	max-width: 300px;
+	border-radius: 14px;
+	background: #f4f4f4;
+}
+.NewsItem_block__bottom__zoPs3 {
+	padding: 20px 15px;
+}
+.NewsItem_block__V2a0z h3 {
+	color: #181818;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 10px 0;
+}
+.NewsItem_block__V2a0z span {
+	color: #777;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.NewsItem_block__V2a0z img {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.NewsItem_block__V2a0z {
+		min-width: 300px;
+	}
+	.NewsItem_block__V2a0z h3 {
+		font-size: 12px;
+	}
+	.NewsItem_block__V2a0z span {
+		font-size: 12px;
+	}
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/news/NewsList/NewsList.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.NewsList_wrapper__iL2wc {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.NewsList_title__D7DbJ {
+	color: #181818;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px) {
+	.NewsList_wrapper__iL2wc {
+		overflow-x: auto;
+		padding: 0 0 12px 0;
+	}
+	.NewsList_title__D7DbJ {
+		font-size: 16px;
+	}
+}
+
