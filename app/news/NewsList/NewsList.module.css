@@ -3,6 +3,12 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
+	flex-wrap: wrap;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .title {
 	color: #181818;
@@ -12,7 +18,13 @@
 	line-height: normal;
 	margin: 0 0 20px 0;
 }
-
+.subTitle {
+	color: #777;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
 @media (max-width: 768px) {
 	.wrapper {
 		overflow-x: auto;

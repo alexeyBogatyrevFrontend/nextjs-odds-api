@@ -1,4 +1,4 @@
-// File: /Users/bogatyrev/pc/work/web/2023/December/nextjs-odds-api/app/layout.tsx
+// File: /Users/bogatyrev/pc/work/web/2023/December/odds/nextjs-odds-api/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

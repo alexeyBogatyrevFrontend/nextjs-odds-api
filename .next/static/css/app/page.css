@@ -277,8 +277,9 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/news/NewsItem/NewsItem.module.css ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************/
 .NewsItem_block__V2a0z {
-	max-width: 300px;
-	border-radius: 14px;
+	min-width: 290px;
+	max-width: 290px;
+	border-radius: 0 0 14px 14px;
 	background: #f4f4f4;
 }
 .NewsItem_block__bottom__zoPs3 {
@@ -299,8 +300,20 @@
 	font-weight: 400;
 	line-height: normal;
 }
-.NewsItem_block__V2a0z img {
+.NewsItem_img__ONsqz {
+	width: 290px;
+	height: 150px;
+	overflow: hidden;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.NewsItem_img__ONsqz img {
 	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	max-width: none;
+	max-height: none;
 }
 
 @media (max-width: 768px) {
@@ -323,6 +336,12 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
+	flex-wrap: wrap;
+}
+.NewsList_header__isMLN {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .NewsList_title__D7DbJ {
 	color: #181818;
@@ -332,7 +351,13 @@
 	line-height: normal;
 	margin: 0 0 20px 0;
 }
-
+.NewsList_subTitle__xUO2K {
+	color: #777;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
 @media (max-width: 768px) {
 	.NewsList_wrapper__iL2wc {
 		overflow-x: auto;

@@ -12,27 +12,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/eventspage/loading": [
+    "/all-news/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/eventspage/loading.js"
-    ],
-    "/eventspage/[data]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/eventspage/[data]/page.css",
-      "static/chunks/app/eventspage/[data]/page.js"
-    ],
-    "/gamepage/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/gamepage/loading.js"
-    ],
-    "/gamepage/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/gamepage/[id]/page.css",
-      "static/chunks/app/gamepage/[id]/page.js"
+      "static/css/app/all-news/page.css",
+      "static/chunks/app/all-news/page.js"
     ]
   }
 }

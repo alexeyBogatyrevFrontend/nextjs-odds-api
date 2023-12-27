@@ -1,20 +1,33 @@
 import React, { FC } from 'react'
-import { NewsItemType } from '../NewsList/NewsList'
+
 import styles from './NewsItem.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
+import { newsType } from '@/app/types'
+import { arrayBufferToBase64 } from '@/app/utils/arrayBufferToBase64'
 
 type NewsItemProps = {
-	item: NewsItemType
+	item: newsType
 }
 
 const NewsItem: FC<NewsItemProps> = ({ item }) => {
+	// @ts-expect-error I use here Buffer not file
+	const base64Encoded = item.image ? arrayBufferToBase64(item.image.data) : ''
+
 	return (
 		<Link href='/all-news' className={styles.block}>
-			<Image src='/news-temp.png' width={290} height={155} alt={item.img} />
+			<div className={styles.img}>
+				<Image
+					src={`data:image/jpeg;base64,${base64Encoded}`}
+					width={290}
+					height={155}
+					alt={item.title}
+				/>
+			</div>
+
 			<div className={styles.block__bottom}>
 				<h3>{item.title}</h3>
-				<span>{item.time}</span>
+				<span>{item.description}</span>
 			</div>
 		</Link>
 	)

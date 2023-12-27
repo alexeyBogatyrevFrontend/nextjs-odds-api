@@ -10,7 +10,10 @@ import SportItem from './components/SportItem/SportItem'
 import TopNewsList from './topnews/TopNewsList/TopNewsList'
 import NewsList from './news/NewsList/NewsList'
 
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from './types'
+import { AppDispatch, fetchNews } from '@/lib/slices/newsSlice'
 
 const API_KEY = 'qGsk8r9szcy1BLP3FC0X0m8mduriDRsF'
 
@@ -24,6 +27,15 @@ export type EventType = {
 }
 
 const Page = () => {
+	const { status } = useSelector((state: RootState) => state.news)
+	const dispatch = useDispatch<AppDispatch>()
+
+	useEffect(() => {
+		if (status === 'idle') {
+			dispatch(fetchNews())
+		}
+	}, [status, dispatch])
+
 	const router = useRouter()
 
 	const searchParams = useSearchParams()
