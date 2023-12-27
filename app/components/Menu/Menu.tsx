@@ -18,7 +18,7 @@ const navLink = [
 	},
 	{
 		name: 'Новости',
-		link: '/news',
+		link: '/all-news',
 	},
 ]
 

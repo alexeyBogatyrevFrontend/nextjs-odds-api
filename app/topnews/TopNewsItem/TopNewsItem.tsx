@@ -15,7 +15,7 @@ const TopNewsItem: FC<TopNewsItemProps> = ({ item }) => {
 	const base64Encoded = item.image ? arrayBufferToBase64(item.image.data) : ''
 
 	return (
-		<Link href='/all-news' className={styles.block}>
+		<Link href={`/all-news/${item._id}`} className={styles.block}>
 			<div className={styles.img}>
 				{' '}
 				<Image
