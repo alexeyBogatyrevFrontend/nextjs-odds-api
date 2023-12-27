@@ -9,7 +9,13 @@
 	align-items: center;
 	gap: 10px;
 }
-
+.allNews {
+	color: #777;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
 @media (max-width: 768px) {
 	.wrapper {
 		display: flex;

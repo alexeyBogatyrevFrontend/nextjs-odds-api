@@ -1,36 +1,20 @@
 import React from 'react'
-import NewsItem from '../TopNewsItem/TopNewsItem'
 import styles from './TopNewsList.module.css'
 import Image from 'next/image'
-
-const testArr = [
-	{
-		img: 'good',
-		title:
-			'Матч Захаряна в Лиге чемпионов и возвращение Ковальчука: что вы могли пропустить',
-		time: '5 часов назад',
-	},
-	{
-		img: 'good',
-		title:
-			'Матч Захаряна в Лиге чемпионов и возвращение Ковальчука: что вы могли пропустить',
-		time: '5 часов назад',
-	},
-	{
-		img: 'good',
-		title:
-			'Матч Захаряна в Лиге чемпионов и возвращение Ковальчука: что вы могли пропустить',
-		time: '5 часов назад',
-	},
-]
-
-export type TopNewsItemType = {
-	img: string
-	title: string
-	time: string
-}
+import { useSelector } from 'react-redux'
+import { RootState } from '@/app/types'
+import Loader from '@/app/components/UI/Loader'
+import TopNewsItem from '../TopNewsItem/TopNewsItem'
+import Link from 'next/link'
 
 const TopNewsList = () => {
+	const { newsList, status, error } = useSelector(
+		(state: RootState) => state.news
+	)
+
+	const topNews = newsList.filter(news => news.isTop)
+	const displayedNews = topNews.slice(0, 3)
+
 	return (
 		<>
 			<h2 className={styles.title}>
@@ -38,10 +22,19 @@ const TopNewsList = () => {
 				Топ новости
 			</h2>
 			<div className={styles.wrapper}>
-				{testArr.map((item, index) => (
-					<NewsItem item={item} key={index} />
-				))}
+				{status === 'loading' ? (
+					<Loader />
+				) : (
+					<>
+						{displayedNews.map((item, index) => (
+							<TopNewsItem item={item} key={index} />
+						))}
+					</>
+				)}
 			</div>
+			<Link href='/all-news' className={styles.allNews}>
+				Все новости {'>'}
+			</Link>
 		</>
 	)
 }
