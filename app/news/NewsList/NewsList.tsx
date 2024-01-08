@@ -14,7 +14,7 @@ const NewsList = () => {
 	const displayedNews = usualNews.slice(0, 6)
 
 	return (
-		<>
+		<div style={{ width: '100%' }}>
 			<div className={styles.header}>
 				<h2 className={styles.title}>Новости</h2>
 				<Link href='/all-news' className={styles.subTitle}>
@@ -27,13 +27,15 @@ const NewsList = () => {
 					<Loader />
 				) : (
 					<>
-						{displayedNews.map((item, index) => (
-							<NewsItem item={item} key={index} />
-						))}
+						{displayedNews.length
+							? displayedNews.map((item, index) => (
+									<NewsItem item={item} key={index} />
+							  ))
+							: 'Новости появятся позже'}
 					</>
 				)}
 			</div>
-		</>
+		</div>
 	)
 }
 

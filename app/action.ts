@@ -3,7 +3,7 @@
 import axios from 'axios'
 import { RootInterface } from './eventspage/[data]/page'
 
-const API_KEY = 'qGsk8r9szcy1BLP3FC0X0m8mduriDRsF'
+const API_KEY = 'zfme0kbYPxejRvJvTdv5gs0LfaadXMSF'
 let dateFormat = 'iso'
 let markets = 'h2h'
 let oddsFormat = 'decimal'

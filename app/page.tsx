@@ -15,7 +15,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from './types'
 import { AppDispatch, fetchNews } from '@/lib/slices/newsSlice'
 
-const API_KEY = 'qGsk8r9szcy1BLP3FC0X0m8mduriDRsF'
+const API_KEY = 'zfme0kbYPxejRvJvTdv5gs0LfaadXMSF'
 
 export type EventType = {
 	key: string

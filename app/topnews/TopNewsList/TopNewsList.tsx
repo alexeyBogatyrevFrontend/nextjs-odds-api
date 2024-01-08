@@ -13,7 +13,7 @@ const TopNewsList = () => {
 	)
 
 	const topNews = newsList.filter(news => news.isTop)
-	const displayedNews = topNews.slice(0, 3)
+	const displayedNews = topNews.slice(0, 6)
 
 	return (
 		<>
@@ -26,9 +26,11 @@ const TopNewsList = () => {
 					<Loader />
 				) : (
 					<>
-						{displayedNews.map((item, index) => (
-							<TopNewsItem item={item} key={index} />
-						))}
+						{displayedNews.length
+							? displayedNews.map((item, index) => (
+									<TopNewsItem item={item} key={index} />
+							  ))
+							: 'Топ новости появятся позже'}
 					</>
 				)}
 			</div>

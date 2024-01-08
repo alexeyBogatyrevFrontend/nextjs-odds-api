@@ -1,4 +1,4 @@
-// File: /Users/bogatyrev/pc/work/web/2023/December/odds/nextjs-odds-api/app/all-news/[id]/page.tsx
+// File: /Users/bogatyrev/pc/work/web/2024/big/odds/nextjs-odds-api/app/all-news/[id]/page.tsx
 import * as entry from '../../../../../app/all-news/[id]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

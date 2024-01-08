@@ -2,7 +2,7 @@ const axios = require('axios')
 const fs = require('fs').promises
 
 // Замените API_KEY на ваш реальный ключ
-const API_KEY = 'qGsk8r9szcy1BLP3FC0X0m8mduriDRsF'
+const API_KEY = 'zfme0kbYPxejRvJvTdv5gs0LfaadXMSF'
 
 const regions = 'us'
 const oddsFormat = 'decimal'

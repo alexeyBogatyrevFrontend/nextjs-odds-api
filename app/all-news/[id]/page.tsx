@@ -43,7 +43,6 @@ const page: FC<NewsPageProps> = ({ params: { id } }) => {
 					<h3>{currentNews?.isTop ? 'Top' : 'Usual'}</h3>
 					<h4>{formattedDate}</h4>
 					<div dangerouslySetInnerHTML={{ __html: currentNews?.textEditor }} />
-					<p>{id}</p>
 				</>
 			)}
 		</Layout>

@@ -16,6 +16,10 @@
 	font-weight: 400;
 	line-height: normal;
 }
+.wrapper {
+	max-height: 285px;
+	overflow-y: auto;
+}
 @media (max-width: 768px) {
 	.wrapper {
 		display: flex;
