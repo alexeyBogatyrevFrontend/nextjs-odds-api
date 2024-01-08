@@ -10,7 +10,7 @@ const Footer = () => {
 			<div
 				className={`container flex justify-between ${styles.footer__container}`}
 			>
-				<Link href='/?category=Soccer'>
+				<Link href='/'>
 					<Logo />
 				</Link>
 				<div

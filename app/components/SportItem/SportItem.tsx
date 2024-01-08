@@ -15,7 +15,7 @@ const SportItem: FC<SportItemProps> = ({ event }) => {
 				<div className={styles.sportCategory__wrapper}>
 					{event.map((item, index) => (
 						<Link
-							href={`/eventspage/${item.group}&${item.key}?category=${item.group}`}
+							href={`/odds/eventspage/${item.group}&${item.key}?category=${item.group}`}
 							key={index}
 						>
 							<div className={styles.sportCategory__item}>

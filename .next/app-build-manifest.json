@@ -28,6 +28,28 @@
       "static/chunks/main-app.js",
       "static/css/app/news/[id]/page.css",
       "static/chunks/app/news/[id]/page.js"
+    ],
+    "/odds/eventspage/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/odds/eventspage/loading.js"
+    ],
+    "/odds/eventspage/[data]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/odds/eventspage/[data]/page.css",
+      "static/chunks/app/odds/eventspage/[data]/page.js"
+    ],
+    "/odds/gamepage/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/odds/gamepage/loading.js"
+    ],
+    "/odds/gamepage/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/odds/gamepage/[id]/page.css",
+      "static/chunks/app/odds/gamepage/[id]/page.js"
     ]
   }
 }

@@ -10,7 +10,7 @@ const Header = () => {
 	return (
 		<header className='py-4 bg-[#181818] relative z-10'>
 			<div className='container flex justify-between'>
-				<Link href='/?category=Soccer'>
+				<Link href='/'>
 					<Logo />
 				</Link>
 				<Burger burger={burger} setBurger={setBurger} />

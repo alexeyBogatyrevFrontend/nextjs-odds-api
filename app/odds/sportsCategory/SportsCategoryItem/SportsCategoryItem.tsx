@@ -29,8 +29,8 @@ const SportsCategoryItem: FC<SportsCategoryItemProps> = ({
 }) => {
 	const dispatch = useDispatch<AppDispatch>()
 
-	const clickHandler = (e: MouseEvent<HTMLAnchorElement>) => {
-		e.preventDefault()
+	const clickHandler = () => {
+		// e.preventDefault()
 		setActive(item.category)
 		dispatch(setCategory(item.category))
 		localStorage.setItem('sport', item.category)

@@ -9,7 +9,7 @@ import Footer from '../components/Footer/Footer'
 import SportsCategoryList from '../odds/sportsCategory/SportsCategoryList/SportsCategoryList'
 import { useDispatch, useSelector } from 'react-redux'
 import { AppDispatch, fetchNews } from '@/lib/slices/newsSlice'
-import { sportState } from '../types'
+import { RootState, sportState } from '../types'
 import { setCategory } from '@/lib/slices/sportCategorySlice'
 
 export type EventType = {
@@ -26,10 +26,11 @@ type LayoutType = {
 }
 
 const Layout: FC<LayoutType> = ({ children }) => {
+	const { newsList } = useSelector((state: RootState) => state.news)
 	const dispatch = useDispatch<AppDispatch>()
 
 	useEffect(() => {
-		dispatch(fetchNews())
+		if (!newsList.length) dispatch(fetchNews())
 	}, [dispatch])
 
 	return (

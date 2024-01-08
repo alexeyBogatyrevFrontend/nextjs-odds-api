@@ -56,7 +56,7 @@ const EventsPage: FC<EventsPageProps> = async ({ params: { data } }) => {
 					<div className={styles.wrapper}>
 						{games.map((game, index) => (
 							<Link
-								href={`/gamepage/${key}&${game.id}?category=${group}`}
+								href={`/odds/gamepage/${key}&${game.id}?category=${group}`}
 								key={index}
 							>
 								<div className={styles.block}>
