@@ -16,3 +16,9 @@ export type RootState = {
 		error: string
 	}
 }
+
+export type sportState = {
+	sport: {
+		category: string
+	}
+}

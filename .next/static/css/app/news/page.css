@@ -386,9 +386,17 @@
 	margin: 0 0 20px 0;
 }
 .all-news_wrapper__sFTj0 {
+	margin: 35px 0;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	gap: 20px;
+}
+.all-news_sort__PnbZi {
+	text-align: center;
+	padding: 15px 17px;
+	border-radius: 7px;
+	background: #f4f4f4;
+	cursor: pointer;
 }
 

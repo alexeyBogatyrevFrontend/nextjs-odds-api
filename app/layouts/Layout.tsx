@@ -1,12 +1,16 @@
 'use client'
 
-import React, { FC, ReactNode, useState } from 'react'
+import React, { FC, ReactNode, useEffect, useState } from 'react'
 import Header from '../components/Header'
 
 import TopNewsList from '../news/TopNewsList/TopNewsList'
 import NewsList from '../news/NewsList/NewsList'
 import Footer from '../components/Footer/Footer'
 import SportsCategoryList from '../odds/sportsCategory/SportsCategoryList/SportsCategoryList'
+import { useDispatch, useSelector } from 'react-redux'
+import { AppDispatch, fetchNews } from '@/lib/slices/newsSlice'
+import { sportState } from '../types'
+import { setCategory } from '@/lib/slices/sportCategorySlice'
 
 export type EventType = {
 	key: string
@@ -22,7 +26,11 @@ type LayoutType = {
 }
 
 const Layout: FC<LayoutType> = ({ children }) => {
-	// const [sport, setSport] = useState('Soccer')
+	const dispatch = useDispatch<AppDispatch>()
+
+	useEffect(() => {
+		dispatch(fetchNews())
+	}, [dispatch])
 
 	return (
 		<div className='mainWrapper'>

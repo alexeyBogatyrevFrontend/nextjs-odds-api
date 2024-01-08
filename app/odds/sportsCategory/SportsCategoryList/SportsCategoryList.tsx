@@ -46,19 +46,17 @@ type SportsCategoryListProps = {
 	setSport?: Dispatch<SetStateAction<string | null>>
 }
 
-const SportsCategoryList: FC<SportsCategoryListProps> = ({ setSport }) => {
+const SportsCategoryList: FC<SportsCategoryListProps> = () => {
 	const searchParams = useSearchParams()
 	const category = searchParams.get('category')
 
 	const [active, setActive] = useState(category)
-
 	return (
 		<div className={`${styles.wrapper} mb-8`}>
 			{sportsCategory.map(item => (
 				<SportsCategoryItem
 					item={item}
 					key={item.title}
-					setSport={setSport}
 					active={active}
 					setActive={setActive}
 				/>

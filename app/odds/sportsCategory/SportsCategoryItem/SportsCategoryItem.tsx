@@ -1,32 +1,45 @@
-import React, { Dispatch, FC, MouseEvent, SetStateAction } from 'react'
+import React, {
+	Dispatch,
+	FC,
+	MouseEvent,
+	SetStateAction,
+	useEffect,
+} from 'react'
 import styles from './SportsCategoryItem.module.css'
 import { sportsCategoryType } from '../SportsCategoryList/SportsCategoryList'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
+
+import { useDispatch, useSelector } from 'react-redux'
+import { sportState } from '@/app/types'
+import { AppDispatch } from '@/lib/slices/newsSlice'
+import { setCategory } from '@/lib/slices/sportCategorySlice'
 
 type SportsCategoryItemProps = {
 	item: sportsCategoryType
 	setSport?: Dispatch<SetStateAction<string | null>>
-	active: string | null // Active category prop
-	setActive: Dispatch<SetStateAction<string | null>> // Setter for active category prop
+	active: string | null
+	setActive: Dispatch<SetStateAction<string | null>>
 }
 
 const SportsCategoryItem: FC<SportsCategoryItemProps> = ({
 	item,
-	setSport,
 	active,
 	setActive,
 }) => {
-	const router = useRouter()
+	const dispatch = useDispatch<AppDispatch>()
 
 	const clickHandler = (e: MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault()
 		setActive(item.category)
-		if (setSport) setSport(item.category)
-
-		router.push(`/?category=${item.category}`)
+		dispatch(setCategory(item.category))
+		localStorage.setItem('sport', item.category)
 	}
+
+	useEffect(() => {
+		const storageSport = localStorage.getItem('sport')
+		if (storageSport) setActive(storageSport)
+	}, [])
 
 	return (
 		<Link

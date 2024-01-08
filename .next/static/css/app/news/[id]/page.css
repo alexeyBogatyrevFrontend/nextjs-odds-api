@@ -389,7 +389,6 @@
 	font-weight: 400;
 	line-height: normal;
 }
-
 .page_img__q7Ecs {
 	position: relative;
 	margin: 35px 0;
@@ -424,6 +423,7 @@
 	width: 24px;
 	height: 24px;
 }
+
 @media (max-width: 768px) {
 	.page_img__q7Ecs {
 		height: 100%;
