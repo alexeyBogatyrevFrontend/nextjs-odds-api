@@ -17,7 +17,7 @@ const NewsList = () => {
 		<div style={{ width: '100%' }}>
 			<div className={styles.header}>
 				<h2 className={styles.title}>Новости</h2>
-				<Link href='/all-news' className={styles.subTitle}>
+				<Link href='/news' className={styles.subTitle}>
 					Все новости {'>'}
 				</Link>
 			</div>

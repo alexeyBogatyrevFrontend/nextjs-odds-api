@@ -75,10 +75,10 @@
 	}
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/topnews/TopNewsItem/TopNewsItem.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
-.TopNewsItem_block__y8NRF {
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/news/TopNewsItem/TopNewsItem.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.TopNewsItem_block__QPv_2 {
 	padding: 7px;
 	display: flex;
 	align-items: center;
@@ -88,12 +88,12 @@
 	background: #f4f4f4;
 	margin: 0 0 10px 0;
 }
-.TopNewsItem_img__nEdIf {
+.TopNewsItem_img__w9GAn {
 	width: 73px;
 	height: 73px;
 	overflow: hidden;
 }
-.TopNewsItem_img__nEdIf img {
+.TopNewsItem_img__w9GAn img {
 	border-radius: 7px;
 	border: 1px solid #00000010;
 	width: 100%;
@@ -103,7 +103,7 @@
 	max-width: none;
 	max-height: none;
 }
-.TopNewsItem_block__y8NRF h3 {
+.TopNewsItem_block__QPv_2 h3 {
 	color: #181818;
 	font-size: 16px;
 	font-style: normal;
@@ -115,7 +115,7 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.TopNewsItem_block__y8NRF span {
+.TopNewsItem_block__QPv_2 span {
 	color: #777;
 	font-size: 14px;
 	font-style: normal;
@@ -124,21 +124,21 @@
 }
 
 @media (max-width: 768px) {
-	.TopNewsItem_block__y8NRF {
+	.TopNewsItem_block__QPv_2 {
 		min-width: 300px;
 	}
-	.TopNewsItem_block__y8NRF span {
+	.TopNewsItem_block__QPv_2 span {
 		font-size: 12px;
 	}
-	.TopNewsItem_block__y8NRF h3 {
+	.TopNewsItem_block__QPv_2 h3 {
 		font-size: 12px;
 	}
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/topnews/TopNewsList/TopNewsList.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************/
-.TopNewsList_title__JveXf {
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/news/TopNewsList/TopNewsList.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.TopNewsList_title__SFfNu {
 	color: #181818;
 	font-size: 24px;
 	font-style: normal;
@@ -149,25 +149,25 @@
 	align-items: center;
 	gap: 10px;
 }
-.TopNewsList_allNews__YuVWX {
+.TopNewsList_allNews__gKwCi {
 	color: #777;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
 }
-.TopNewsList_wrapper__MvaHH {
+.TopNewsList_wrapper__qgNQr {
 	max-height: 285px;
 	overflow-y: auto;
 }
 @media (max-width: 768px) {
-	.TopNewsList_wrapper__MvaHH {
+	.TopNewsList_wrapper__qgNQr {
 		display: flex;
 		gap: 20px;
 		overflow-x: auto;
 		padding: 0 0 2px 0;
 	}
-	.TopNewsList_title__JveXf {
+	.TopNewsList_title__SFfNu {
 		font-size: 16px;
 	}
 }

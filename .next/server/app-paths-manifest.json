@@ -1,6 +1,8 @@
 {
-  "/page": "app/page.js",
-  "/all-news/[id]/page": "app/all-news/[id]/page.js",
-  "/all-news/page": "app/all-news/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/not-found": "app/not-found.js",
+  "/eventspage/[data]/page": "app/eventspage/[data]/page.js",
+  "/gamepage/[id]/page": "app/gamepage/[id]/page.js",
+  "/news/page": "app/news/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
 }

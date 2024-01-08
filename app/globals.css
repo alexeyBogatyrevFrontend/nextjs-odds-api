@@ -138,10 +138,10 @@ th {
 	gap: 20px;
 }
 .left {
-	min-width: 300px;
+	min-width: 25%;
 }
 .right {
-	width: 100%;
+	min-width: 73%;
 }
 h2 {
 	color: #181818;
@@ -151,16 +151,19 @@ h2 {
 	line-height: normal;
 	margin: 0 0 20px 0;
 }
-@media (max-width: 992px) {
+/* @media (max-width: 1270px) {
 	.left {
 		min-width: 200px;
 	}
-}
+} */
 @media (max-width: 768px) {
 	h2 {
 		font-size: 16px;
 	}
 	.left {
+		width: 100%;
+	}
+	.right {
 		width: 100%;
 	}
 	.main__wrapper {

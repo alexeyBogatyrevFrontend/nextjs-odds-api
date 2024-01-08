@@ -7,7 +7,7 @@ import Header from './components/Header'
 import Footer from './components/Footer/Footer'
 import SportsCategoryList from './sportsCategory/SportsCategoryList/SportsCategoryList'
 import SportItem from './components/SportItem/SportItem'
-import TopNewsList from './topnews/TopNewsList/TopNewsList'
+import TopNewsList from './news/TopNewsList/TopNewsList'
 import NewsList from './news/NewsList/NewsList'
 
 import { useRouter, useSearchParams } from 'next/navigation'
@@ -41,7 +41,7 @@ const Page = () => {
 	const searchParams = useSearchParams()
 	const category = searchParams.get('category')
 
-	const [sport, setSport] = useState(category)
+	const [sport, setSport] = useState(category ?? 'Soccer')
 	const [event, setEvent] = useState<EventType[]>([])
 	const [isLoading, setIsLoading] = useState(false)
 

@@ -12,17 +12,43 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/all-news/[id]/page": [
+    "/eventspage/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/all-news/[id]/page.css",
-      "static/chunks/app/all-news/[id]/page.js"
+      "static/chunks/app/eventspage/loading.js"
     ],
-    "/all-news/page": [
+    "/eventspage/[data]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/all-news/page.css",
-      "static/chunks/app/all-news/page.js"
+      "static/css/app/eventspage/[data]/page.css",
+      "static/chunks/app/eventspage/[data]/page.js"
+    ],
+    "/gamepage/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/gamepage/loading.js"
+    ],
+    "/gamepage/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/gamepage/[id]/page.css",
+      "static/chunks/app/gamepage/[id]/page.js"
+    ],
+    "/news/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/news/page.css",
+      "static/chunks/app/news/page.js"
+    ],
+    "/news/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/news/loading.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
     ]
   }
 }
