@@ -35,11 +35,12 @@ const page: FC<NewsPageProps> = async ({ params: { id } }) => {
 		: 'Дата не была установлена'
 
 	const base64Encoded = currentNews.image
-		? arrayBufferToBase64(currentNews.image.data)
+		? // @ts-expect-error I use here Buffer not file
+		  arrayBufferToBase64(currentNews.image.data)
 		: ''
 	return (
 		<Layout>
-			<div>
+			<div className={styles.block}>
 				<h1 className={styles.title}>{currentNews?.h1}</h1>
 				<span className={styles.date}>{formattedDate}</span>
 				<div className={styles.img}>
@@ -49,6 +50,11 @@ const page: FC<NewsPageProps> = async ({ params: { id } }) => {
 						height={100}
 						alt={currentNews?.h1}
 					/>
+					{currentNews.isTop && (
+						<div className={styles.top}>
+							<Image src='/top-fire.svg' width={24} height={24} alt='fire' />
+						</div>
+					)}
 				</div>
 				<div dangerouslySetInnerHTML={{ __html: currentNews?.textEditor }} />
 			</div>

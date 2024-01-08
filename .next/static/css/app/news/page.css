@@ -79,6 +79,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/news/TopNewsItem/TopNewsItem.module.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
 .TopNewsItem_block__QPv_2 {
+	position: relative;
 	padding: 7px;
 	display: flex;
 	align-items: center;
@@ -122,7 +123,20 @@
 	font-weight: 400;
 	line-height: normal;
 }
-
+.TopNewsItem_top__4r5jw {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
 @media (max-width: 768px) {
 	.TopNewsItem_block__QPv_2 {
 		min-width: 300px;
@@ -180,6 +194,7 @@
 	max-width: 290px;
 	border-radius: 0 0 14px 14px;
 	background: #f4f4f4;
+	position: relative;
 }
 .NewsItem_block__bottom__zoPs3 {
 	padding: 20px 15px;
@@ -213,7 +228,20 @@
 	max-width: none;
 	max-height: none;
 }
-
+.NewsItem_top__MxUwU {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
 @media (max-width: 768px) {
 	.NewsItem_block__V2a0z {
 		min-width: 300px;
@@ -285,10 +313,10 @@
 	}
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/sportsCategory/SportsCategoryItem/SportsCategoryItem.module.css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
-.SportsCategoryItem_block__2Sz6T {
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/odds/sportsCategory/SportsCategoryItem/SportsCategoryItem.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SportsCategoryItem_block__NN2gH {
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -297,10 +325,10 @@
 	background: #f4f4f4;
 	cursor: pointer;
 }
-.SportsCategoryItem_block__2Sz6T img {
+.SportsCategoryItem_block__NN2gH img {
 	width: 24px;
 }
-.SportsCategoryItem_block__2Sz6T span {
+.SportsCategoryItem_block__NN2gH span {
 	color: #181818;
 	font-size: 16px;
 	font-style: normal;
@@ -308,35 +336,35 @@
 	line-height: normal;
 }
 
-.SportsCategoryItem_active__HbLa9 {
+.SportsCategoryItem_active__GsBe9 {
 	background: #18c653;
 }
-.SportsCategoryItem_active__HbLa9 span {
+.SportsCategoryItem_active__GsBe9 span {
 	color: #fff;
 }
 
 @media (max-width: 768px) {
-	.SportsCategoryItem_block__2Sz6T {
+	.SportsCategoryItem_block__NN2gH {
 		min-width: -moz-fit-content;
 		min-width: fit-content;
 		justify-content: center;
 	}
-	.SportsCategoryItem_block__2Sz6T span {
+	.SportsCategoryItem_block__NN2gH span {
 		font-size: 14px;
 	}
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/sportsCategory/SportsCategoryList/SportsCategoryList.module.css ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
-.SportsCategoryList_wrapper__0uVPx {
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/odds/sportsCategory/SportsCategoryList/SportsCategoryList.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SportsCategoryList_wrapper__kogfk {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
 
 @media (max-width: 768px) {
-	.SportsCategoryList_wrapper__0uVPx {
+	.SportsCategoryList_wrapper__kogfk {
 		flex-direction: row;
 		overflow-x: auto;
 		padding: 0 0 12px 0;

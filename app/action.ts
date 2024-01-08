@@ -1,7 +1,7 @@
 'use server'
 
 import axios from 'axios'
-import { RootInterface } from './eventspage/[data]/page'
+import { RootInterface } from './odds/eventspage/[data]/page'
 
 // odds
 const API_KEY = 'zfme0kbYPxejRvJvTdv5gs0LfaadXMSF'

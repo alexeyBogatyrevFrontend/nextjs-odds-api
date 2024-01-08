@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import TopNewsList from '../news/TopNewsList/TopNewsList'
 import NewsList from '../news/NewsList/NewsList'
 import Footer from '../components/Footer/Footer'
-import SportsCategoryList from '../sportsCategory/SportsCategoryList/SportsCategoryList'
+import SportsCategoryList from '../odds/sportsCategory/SportsCategoryList/SportsCategoryList'
 
 export type EventType = {
 	key: string

@@ -29,6 +29,12 @@ const NewsItem: FC<NewsItemProps> = ({ item }) => {
 				<h3>{item.title}</h3>
 				<span>{item.description}</span>
 			</div>
+
+			{item.isTop && (
+				<div className={styles.top}>
+					<Image src='/top-fire.svg' width={24} height={24} alt='fire' />
+				</div>
+			)}
 		</Link>
 	)
 }
