@@ -1,11 +1,12 @@
-'use client'
-import Loader from '@/app/components/UI/Loader'
+import { fetchNews } from '@/app/action'
 import Layout from '@/app/layouts/Layout'
-import { RootState } from '@/app/types'
-import { AppDispatch, fetchNews } from '@/lib/slices/newsSlice'
+import { newsType } from '@/app/types'
+import { arrayBufferToBase64 } from '@/app/utils/arrayBufferToBase64'
 import dayjs from 'dayjs'
-import React, { FC, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import Image from 'next/image'
+import React, { FC } from 'react'
+
+import styles from './page.module.css'
 
 type NewsPageProps = {
 	params: {
@@ -13,18 +14,19 @@ type NewsPageProps = {
 	}
 }
 
-const page: FC<NewsPageProps> = ({ params: { id } }) => {
-	const { newsList, status, error } = useSelector(
-		(state: RootState) => state.news
-	)
+export async function generateMetadata({ params: { id } }: NewsPageProps) {
+	const newsList: newsType[] = await fetchNews()
 
-	const dispatch = useDispatch<AppDispatch>()
+	const currentNews = newsList.filter(news => news._id === id)[0]
 
-	useEffect(() => {
-		if (status === 'idle') {
-			dispatch(fetchNews())
-		}
-	}, [status, dispatch])
+	return {
+		title: currentNews.title,
+		description: currentNews.description,
+	}
+}
+
+const page: FC<NewsPageProps> = async ({ params: { id } }) => {
+	const newsList: newsType[] = await fetchNews()
 
 	const currentNews = newsList.filter(news => news._id === id)[0]
 
@@ -32,19 +34,24 @@ const page: FC<NewsPageProps> = ({ params: { id } }) => {
 		? dayjs(currentNews?.date).format('MMMM DD, YYYY HH:mm')
 		: 'Дата не была установлена'
 
+	const base64Encoded = currentNews.image
+		? arrayBufferToBase64(currentNews.image.data)
+		: ''
 	return (
 		<Layout>
-			{status === 'loading' ? (
-				<Loader />
-			) : (
-				<>
-					<h1>{currentNews?.title}</h1>
-					<h2>{currentNews?.description}</h2>
-					<h3>{currentNews?.isTop ? 'Top' : 'Usual'}</h3>
-					<h4>{formattedDate}</h4>
-					<div dangerouslySetInnerHTML={{ __html: currentNews?.textEditor }} />
-				</>
-			)}
+			<div>
+				<h1 className={styles.title}>{currentNews?.h1}</h1>
+				<span className={styles.date}>{formattedDate}</span>
+				<div className={styles.img}>
+					<Image
+						src={`data:image/jpeg;base64,${base64Encoded}`}
+						width={100}
+						height={100}
+						alt={currentNews?.h1}
+					/>
+				</div>
+				<div dangerouslySetInnerHTML={{ __html: currentNews?.textEditor }} />
+			</div>
 		</Layout>
 	)
 }

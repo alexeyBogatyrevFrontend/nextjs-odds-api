@@ -45,10 +45,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/news/loading.js"
     ],
-    "/not-found": [
+    "/news/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/css/app/news/[id]/page.css",
+      "static/chunks/app/news/[id]/page.js"
     ]
   }
 }

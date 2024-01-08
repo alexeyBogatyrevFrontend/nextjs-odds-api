@@ -359,7 +359,7 @@
 }
 .all-news_wrapper__sFTj0 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	gap: 20px;
 }
