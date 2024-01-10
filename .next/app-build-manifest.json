@@ -1,27 +1,16 @@
 {
   "pages": {
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
-    "/odds/gamepage/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/odds/gamepage/loading.js"
-    ],
-    "/odds/gamepage/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/odds/gamepage/[id]/page.css",
-      "static/chunks/app/odds/gamepage/[id]/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/odds/eventspage/loading": [
       "static/chunks/webpack.js",
@@ -34,22 +23,16 @@
       "static/css/app/odds/eventspage/[data]/page.css",
       "static/chunks/app/odds/eventspage/[data]/page.js"
     ],
-    "/news/page": [
+    "/odds/gamepage/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/news/page.css",
-      "static/chunks/app/news/page.js"
+      "static/chunks/app/odds/gamepage/loading.js"
     ],
-    "/news/loading": [
+    "/odds/gamepage/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/news/loading.js"
-    ],
-    "/news/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/news/[id]/page.css",
-      "static/chunks/app/news/[id]/page.js"
+      "static/css/app/odds/gamepage/[id]/page.css",
+      "static/chunks/app/odds/gamepage/[id]/page.js"
     ]
   }
 }
