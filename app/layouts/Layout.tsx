@@ -1,6 +1,6 @@
 'use client'
 
-import React, { FC, ReactNode, useEffect, useState } from 'react'
+import React, { FC, ReactNode, useEffect } from 'react'
 import Header from '../components/Header'
 
 import TopNewsList from '../news/TopNewsList/TopNewsList'
@@ -9,8 +9,7 @@ import Footer from '../components/Footer/Footer'
 import SportsCategoryList from '../odds/sportsCategory/SportsCategoryList/SportsCategoryList'
 import { useDispatch, useSelector } from 'react-redux'
 import { AppDispatch, fetchNews } from '@/lib/slices/newsSlice'
-import { RootState, sportState } from '../types'
-import { setCategory } from '@/lib/slices/sportCategorySlice'
+import { RootState } from '../types'
 
 export type EventType = {
 	key: string

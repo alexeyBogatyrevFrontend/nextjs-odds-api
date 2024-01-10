@@ -1,7 +1,7 @@
 {
-  "/news/page": "app/news/page.js",
-  "/news/[id]/page": "app/news/[id]/page.js",
+  "/odds/gamepage/[id]/page": "app/odds/gamepage/[id]/page.js",
   "/page": "app/page.js",
   "/odds/eventspage/[data]/page": "app/odds/eventspage/[data]/page.js",
-  "/odds/gamepage/[id]/page": "app/odds/gamepage/[id]/page.js"
+  "/news/page": "app/news/page.js",
+  "/news/[id]/page": "app/news/[id]/page.js"
 }

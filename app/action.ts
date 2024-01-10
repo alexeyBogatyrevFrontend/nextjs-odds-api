@@ -4,7 +4,7 @@ import axios from 'axios'
 import { RootInterface } from './odds/eventspage/[data]/page'
 
 // odds
-const API_KEY = 'zfme0kbYPxejRvJvTdv5gs0LfaadXMSF'
+const API_KEY = process.env.NEXT_PUBLIC_ODDS_API_KEY
 let dateFormat = 'iso'
 let markets = 'h2h'
 let oddsFormat = 'decimal'
@@ -42,7 +42,7 @@ export const getGame = async (key: string) => {
 
 // news
 export const fetchNews = async () => {
-	const response = await axios.get('http://localhost:3001/news/all')
+	const response = await axios.get('http://localhost:3002/news/all')
 	const result = response.data
 
 	return result

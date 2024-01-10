@@ -2,77 +2,47 @@
   "node": {
     "ea5b7486158739b96d15992109dda2c8e673baaa": {
       "workers": {
-        "app/all-news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=true!",
-        "app/all-news/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22fetchNews%22%2C%22getEvents%22%2C%22getGame%22%5D%5D%5D&__client_imported__=true!",
-        "app/news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/news/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/odds/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/odds/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!"
+        "app/odds/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/odds/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/news/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/all-news/page": "rsc",
-        "app/eventspage/[data]/page": "rsc",
-        "app/gamepage/[id]/page": "rsc",
-        "app/page": "action-browser",
-        "app/all-news/[id]/page": "action-browser",
-        "app/news/page": "rsc",
-        "app/news/[id]/page": "rsc",
+        "app/odds/gamepage/[id]/page": "rsc",
         "app/odds/eventspage/[data]/page": "rsc",
-        "app/odds/gamepage/[id]/page": "rsc"
-      }
-    },
-    "50aef2cecbbc73f13a59f5822fe57500b241314f": {
-      "workers": {
-        "app/all-news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=true!",
-        "app/all-news/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22fetchNews%22%2C%22getEvents%22%2C%22getGame%22%5D%5D%5D&__client_imported__=true!",
-        "app/news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/news/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/odds/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/odds/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/all-news/page": "rsc",
-        "app/eventspage/[data]/page": "rsc",
-        "app/gamepage/[id]/page": "rsc",
-        "app/page": "action-browser",
-        "app/all-news/[id]/page": "action-browser",
         "app/news/page": "rsc",
-        "app/news/[id]/page": "rsc",
-        "app/odds/eventspage/[data]/page": "rsc",
-        "app/odds/gamepage/[id]/page": "rsc"
+        "app/news/[id]/page": "rsc"
       }
     },
     "d5d8531871710d8f6375bad83a09f62b51d8178b": {
       "workers": {
-        "app/all-news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=true!",
-        "app/all-news/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22fetchNews%22%2C%22getEvents%22%2C%22getGame%22%5D%5D%5D&__client_imported__=true!",
-        "app/news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/news/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/odds/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!",
-        "app/odds/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22getGame%22%2C%22fetchNews%22%5D%5D%5D&__client_imported__=!"
+        "app/odds/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/odds/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/news/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
-        "app/all-news/page": "rsc",
-        "app/eventspage/[data]/page": "rsc",
-        "app/gamepage/[id]/page": "rsc",
-        "app/page": "action-browser",
-        "app/all-news/[id]/page": "action-browser",
-        "app/news/page": "rsc",
-        "app/news/[id]/page": "rsc",
+        "app/odds/gamepage/[id]/page": "rsc",
         "app/odds/eventspage/[data]/page": "rsc",
-        "app/odds/gamepage/[id]/page": "rsc"
+        "app/news/page": "rsc",
+        "app/news/[id]/page": "rsc"
+      }
+    },
+    "50aef2cecbbc73f13a59f5822fe57500b241314f": {
+      "workers": {
+        "app/odds/gamepage/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/odds/eventspage/[data]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/news/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!",
+        "app/news/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fbogatyrev%2Fpc%2Fwork%2Fweb%2F2024%2Fbig%2Fodds%2Fnextjs-odds-api%2Fapp%2Faction.ts%22%2C%5B%22getEvents%22%2C%22fetchNews%22%2C%22getGame%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/odds/gamepage/[id]/page": "rsc",
+        "app/odds/eventspage/[data]/page": "rsc",
+        "app/news/page": "rsc",
+        "app/news/[id]/page": "rsc"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "RHH2rI9vATTCOWn3NR+ExjGt1AmCWxZlR4iEKdGaBvk="
+  "encryptionKey": "HWhCB8mhkHMUSYxfPKJ9cmCyRIOnqawXk/ov859Nv9Q="
 }

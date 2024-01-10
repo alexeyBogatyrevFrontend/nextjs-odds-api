@@ -3,14 +3,15 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import SportItem from './components/SportItem/SportItem'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState, sportState } from './types'
 import { AppDispatch, fetchNews } from '@/lib/slices/newsSlice'
 import Layout from './layouts/Layout'
-import { setCategory } from '@/lib/slices/sportCategorySlice'
+import handler from '@/lib/openai'
+import Loader from './components/UI/Loader'
 
-const API_KEY = 'zfme0kbYPxejRvJvTdv5gs0LfaadXMSF'
+const API_KEY = process.env.NEXT_PUBLIC_ODDS_API_KEY
 
 export type EventType = {
 	key: string
@@ -70,7 +71,13 @@ const Page = () => {
 		}
 	}, [sport])
 
-	return <Layout>{event.length > 0 && <SportItem event={event} />}</Layout>
+	return (
+		<Layout>
+			<h2>Категории спорта</h2>
+			{!event.length && <Loader />}
+			{event.length > 0 && <SportItem event={event} />}
+		</Layout>
+	)
 }
 
 export default Page

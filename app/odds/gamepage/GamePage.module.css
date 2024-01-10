@@ -16,7 +16,7 @@
 .block__game {
 	border-radius: 14px;
 	padding: 55px;
-	margin: 0 0 50px 0;
+	margin: 0 0 16px 0;
 }
 .game {
 	display: flex;
@@ -59,7 +59,12 @@
 	height: 300px;
 	background: url('/sport-event/bg.png') center center / cover no-repeat;
 }
-
+.bookmakers {
+	padding: 15px;
+	border-radius: 16px;
+	background-color: rgb(229 231 235);
+	min-width: 200px;
+}
 @media (max-width: 768px) {
 	.block__game {
 		padding: 20px;

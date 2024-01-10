@@ -10,7 +10,6 @@ type SportItemProps = {
 const SportItem: FC<SportItemProps> = ({ event }) => {
 	return (
 		<div className='mb-8'>
-			<h2>Категории спорта</h2>
 			<div className={styles.sportCategory}>
 				<div className={styles.sportCategory__wrapper}>
 					{event.map((item, index) => (
